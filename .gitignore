@@ -1,0 +1,11 @@
+
+__history/*
+__recovery/*
+*.obj
+Win32/Release/*
+Win32/Debug/*
+Win32/Simulation/*
+*.stat
+*.res
+
+
