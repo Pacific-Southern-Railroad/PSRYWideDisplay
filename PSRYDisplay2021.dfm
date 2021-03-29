@@ -47,32 +47,33 @@ object Form2: TForm2
       Height = 13
       Caption = 'IP Address'
     end
-    object Hyde: TButton
-      Left = 1032
-      Top = 24
-      Width = 97
-      Height = 33
-      Caption = 'Hyde/Yard/Port '
-      TabOrder = 0
-      OnClick = HydeClick
-    end
-    object LathamDell: TButton
-      Left = 1168
-      Top = 24
-      Width = 161
-      Height = 33
-      Caption = 'Latham/Dell/Shore/Krulish'
-      TabOrder = 1
-      OnClick = LathamDellClick
-    end
-    object NassauBank: TButton
-      Left = 1368
-      Top = 24
+    object btnHyYdPt: TSpeedButton
+      Left = 816
+      Top = 16
       Width = 121
-      Height = 33
+      Height = 38
+      GroupIndex = 5
+      Down = True
+      Caption = 'Hyde/Yard/Port'
+      OnClick = btnHyYdPtClick
+    end
+    object btnLaKr: TSpeedButton
+      Left = 992
+      Top = 16
+      Width = 153
+      Height = 38
+      GroupIndex = 5
+      Caption = 'Latham/Dell/Shore/Krulish'
+      OnClick = btnLaKrClick
+    end
+    object btnNaCf: TSpeedButton
+      Left = 1200
+      Top = 16
+      Width = 138
+      Height = 38
+      GroupIndex = 5
       Caption = 'Nassau/Bank/Cliff'
-      TabOrder = 2
-      OnClick = NassauBankClick
+      OnClick = btnNaCfClick
     end
     object IPAddress: TMemo
       Left = 304
@@ -87,21 +88,21 @@ object Form2: TForm2
       Lines.Strings = (
         '98.110.124.243')
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 0
     end
     object sCol: TEdit
       Left = 56
       Top = 32
       Width = 41
       Height = 21
-      TabOrder = 4
+      TabOrder = 1
     end
     object sRow: TEdit
       Left = 160
       Top = 32
       Width = 49
       Height = 21
-      TabOrder = 5
+      TabOrder = 2
     end
   end
   object PanelX: TPanel

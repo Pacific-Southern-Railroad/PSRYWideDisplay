@@ -72,7 +72,6 @@
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <BCC_PCHName_Clang>PSRYDisplayProject.h</BCC_PCHName_Clang>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
@@ -107,7 +106,6 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <BCC_PCHName_Clang>PSRYDisplayProject.h</BCC_PCHName_Clang>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
     </PropertyGroup>
     <ItemGroup>
@@ -124,13 +122,6 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="ThrottleUnit.cpp">
-            <Form>ThrottleForm</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>ThrottleUnit.h</DependentOn>
-            <BuildOrder>3</BuildOrder>
-        </CppCompile>
-        <FormResources Include="ThrottleUnit.dfm"/>
         <FormResources Include="PSRYDisplay2021.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

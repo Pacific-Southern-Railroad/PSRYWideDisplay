@@ -13,6 +13,7 @@
 #include <Graphics.hpp>
 #include <System.ImageList.hpp>
 #include <System.Win.ScktComp.hpp>
+#include <Vcl.Buttons.hpp>
 //---------------------------------------------------------------------------
 const int HtWd = 16;
 
@@ -20,9 +21,6 @@ class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
    TPanel *Panel1;
-   TButton *Hyde;
-   TButton *LathamDell;
-   TButton *NassauBank;
    TImage *ImageHydeYardPort;
    TImage *ImageLathamKrulish;
    TImage *ImageNassauCliff;
@@ -50,10 +48,10 @@ __published:	// IDE-managed Components
 	TLabel *Label6;
 	TLabel *Label7;
 	TLabel *Label8;
+	TSpeedButton *btnHyYdPt;
+	TSpeedButton *btnLaKr;
+	TSpeedButton *btnNaCf;
    void __fastcall FormActivate(TObject *Sender);
-   void __fastcall HydeClick(TObject *Sender);
-   void __fastcall LathamDellClick(TObject *Sender);
-   void __fastcall NassauBankClick(TObject *Sender);
    void __fastcall ClientSocketRead(TObject *Sender,
           TCustomWinSocket *Socket);
    void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
@@ -75,6 +73,9 @@ __published:	// IDE-managed Components
           int X, int Y);
 	void __fastcall ImageHydeYardPortMouseMove(TObject *Sender, TShiftState Shift, int X,
           int Y);
+	void __fastcall btnHyYdPtClick(TObject *Sender);
+	void __fastcall btnLaKrClick(TObject *Sender);
+	void __fastcall btnNaCfClick(TObject *Sender);
 
 private:	// User declarations
 

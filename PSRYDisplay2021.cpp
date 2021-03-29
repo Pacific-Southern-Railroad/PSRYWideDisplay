@@ -145,35 +145,8 @@ int NaCfDiaXOrigin = 0;
 int NaCfDiaYOrigin = 20;
 
 //---------------------------------------------------------------------------
-void __fastcall TForm2::HydeClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = true;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = false;
-	ImageHydeYardPort->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
 
-void __fastcall TForm2::LathamDellClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = true;
-	ImageNassauCliff->Visible = false;
-	ImageLathamKrulish->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
 
-void __fastcall TForm2::NassauBankClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = true;
-	ImageNassauCliff->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
 
 void __fastcall TForm2::ClientSocketRead(TObject *Sender,
 	  TCustomWinSocket *Socket)
@@ -487,4 +460,36 @@ void __fastcall TForm2::ImageHydeYardPortMouseMove(TObject *Sender, TShiftState 
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TForm2::btnHyYdPtClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = true;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = false;
+	ImageHydeYardPort->Left = 0;
+	Train->SetFocus();
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnLaKrClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = true;
+	ImageNassauCliff->Visible = false;
+	ImageLathamKrulish->Left = 0;
+	Train->SetFocus();
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnNaCfClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = true;
+	ImageNassauCliff->Left = 0;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
 
